@@ -1,5 +1,9 @@
-bisiesto = int(input("Ingresa el año para saber si es bisiesto: "))
-if (bisiesto % 4 == 0 and bisiesto % 100 != 0) or bisiesto % 400 == 0:
-    print("El año :", bisiesto, " es bisiesto")
-else:
-    print("El año: ", bisiesto, "no es bisiesto")
+año = int(input("Ingrese el año a consultar si es bisiesto: "))
+
+def bisiesto(año):
+    if (año % 4 == 0 and año % 100 != 0) or año % 400 == 0:
+        print("El año ", año, " es bisiesto")
+    else:
+        print("El año ", año, " no es bisiesto")
+
+print(bisiesto(año))
