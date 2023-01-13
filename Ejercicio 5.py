@@ -6,4 +6,4 @@ def bisiesto(año):
     else:
         print("El año ", año, " no es bisiesto")
 
-print(bisiesto(año))
+bisiesto(año)
